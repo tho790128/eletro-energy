@@ -7,5 +7,7 @@ if atacado
 }
 
 move_and_collide(velh,velv,global.colisores)
-
-estado()
+if instance_exists(o_player)
+{
+    estado()
+}

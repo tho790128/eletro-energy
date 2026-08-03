@@ -6,3 +6,5 @@ right = keyboard_check(ord("D"))
 estado()
 
 move_and_collide(velh,velv,global.colisores)
+
+temp_dash2 --
