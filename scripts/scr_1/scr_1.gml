@@ -1,0 +1,1 @@
+global.colisores = [o_entidades,o_parede]

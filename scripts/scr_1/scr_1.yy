@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_1",
+  "parent":{
+    "name":"eletro-energy",
+    "path":"eletro-energy.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
