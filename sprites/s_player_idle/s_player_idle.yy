@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"player",
+    "path":"folders/entitys/player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

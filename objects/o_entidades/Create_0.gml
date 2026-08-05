@@ -11,6 +11,14 @@ temp_dano = 0
 
 max_temp_dano = 30
 
+xscale = 1
+yscale = 1
+
+dir = 0
+force = 10
+
+dire = 1
+
 perde_vida = function(dano=1)
 {
     if temp_dano <= 0
@@ -19,3 +27,4 @@ perde_vida = function(dano=1)
         temp_dano = max_temp_dano
     }
 }
+

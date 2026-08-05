@@ -9,8 +9,8 @@
   "name":"o_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"player",
+    "path":"folders/entitys/player.yy",
   },
   "parentObjectId":{
     "name":"o_entidades",

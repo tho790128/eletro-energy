@@ -46,8 +46,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"enemy1",
+    "path":"folders/entitys/enemys/enemy1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

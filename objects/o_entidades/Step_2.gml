@@ -1,10 +1,16 @@
 temp_dano--
+
+
+
+move_and_collide(velh,velv,global.colisores)
+
 if vida <= 0
 {
     instance_destroy()
 }
-if velh > 0 image_xscale = 1
-if velh < 0 image_xscale = -1
+if velh > 0 dire = 1
+if velh < 0 dire = -1
+
 
 
 depth = -y

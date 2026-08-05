@@ -5,10 +5,10 @@ velv = 0
 
 max_vel = 4
 
-vel_dash = 20
+vel_dash = 40
 temp_dash = 5
 
-temp_dash2 = 60 * 1
+temp_dash2 = 0
 
 dash = false
 
@@ -22,15 +22,18 @@ vida = 5
 estado = noone
 idle_estado = function()
 {
-    sprite_index = s_player_idle
+    troca_sprite(s_player_idle)
     velh = 0
     velv = 0
+    
+    xscale = lerp(xscale,1,0.1)
+    yscale = lerp(yscale,1,0.1)
     
     if up or down or left or right
     {
         estado = walk_estado
     }
-    if mouse_check_button(mb_left) && temp_dash2 <= 0
+    if mouse_check_button(mb_right) && temp_dash2 <= 0
     {
         estado = dash_estado
     }
@@ -39,6 +42,8 @@ idle_estado = function()
 
 walk_estado = function()
 {
+    xscale = lerp(xscale,1.1,0.1)
+    yscale = lerp(yscale,1.1,0.1)
     if up or down or left or right
     {
         var _dir = point_direction(0,0,right -left,down - up)
@@ -51,7 +56,7 @@ walk_estado = function()
         estado = idle_estado
     }
     
-    if mouse_check_button(mb_left) && temp_dash2 <= 0
+    if mouse_check_button(mb_right) && temp_dash2 <= 0
     {
         estado = dash_estado
     }
@@ -63,17 +68,18 @@ dash_estado = function()
     
     var _dir = point_direction(x,y,mouse_x,mouse_y)
     
+    yscale = lerp(yscale,0.5,0.1)
     
     
-    
-    if mouse_check_button(mb_left)
+    if mouse_check_button(mb_right)
     {
-        sprite_index = s_player_loading_dash
+        troca_sprite(s_player_loading_dash)
         
         velh = 0
         velv = 0
         temp_dano = 10
         dash = true
+        
     }
     if dash
     {
@@ -89,12 +95,14 @@ dash_estado = function()
         velh = lengthdir_x(vel_dash,_dir)
         velv = lengthdir_y(vel_dash,_dir)
         
-        x += velh
-        y += velv
+        
         
         if temp_dash <= 0
         {
-            
+            if global.combo > 0
+            {
+                global.dash_combo ++
+            }
             
             dash = false
             

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"o_caixa",
+    "path":"folders/entitys/objetos/o_caixa.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

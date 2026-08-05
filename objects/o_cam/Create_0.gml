@@ -1,0 +1,1 @@
+alvo = o_player

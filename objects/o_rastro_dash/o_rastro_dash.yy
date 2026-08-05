@@ -9,8 +9,8 @@
   "name":"o_rastro_dash",
   "overriddenProperties":[],
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"player",
+    "path":"folders/entitys/player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

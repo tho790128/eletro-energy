@@ -10,8 +10,8 @@
   "name":"o_caixa",
   "overriddenProperties":[],
   "parent":{
-    "name":"eletro-energy",
-    "path":"eletro-energy.yyp",
+    "name":"o_caixa",
+    "path":"folders/entitys/objetos/o_caixa.yy",
   },
   "parentObjectId":{
     "name":"o_entidades",

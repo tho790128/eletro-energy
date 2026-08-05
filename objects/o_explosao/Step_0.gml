@@ -24,9 +24,10 @@ with(o_entidades)
 {
     var _dist = point_distance(x,y,other.x,other.y)
     
-    if _dist < other.dist_2 && _dist > other.dist_1 && id != other.dono
+    if _dist < other.dist_2 && _dist > other.dist_1 && id != other.dono && temp_dano <= 0
     {
         perde_vida(other.dano)
+        
     }
 }
 
