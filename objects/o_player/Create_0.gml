@@ -33,7 +33,7 @@ idle_estado = function()
     {
         estado = walk_estado
     }
-    if mouse_check_button(mb_right) && temp_dash2 <= 0
+    if mouse_check_button(mb_left) && temp_dash2 <= 0
     {
         estado = dash_estado
     }
@@ -56,7 +56,7 @@ walk_estado = function()
         estado = idle_estado
     }
     
-    if mouse_check_button(mb_right) && temp_dash2 <= 0
+    if mouse_check_button(mb_left) && temp_dash2 <= 0
     {
         estado = dash_estado
     }
@@ -71,7 +71,7 @@ dash_estado = function()
     yscale = lerp(yscale,0.5,0.1)
     
     
-    if mouse_check_button(mb_right)
+    if mouse_check_button(mb_left)
     {
         troca_sprite(s_player_loading_dash)
         

@@ -5,4 +5,9 @@ part_system_position(_part,x,y)
 
 instance_create_depth(x,y,depth,o_orb)
 
+repeat (irandom_range(1,8))
+{
+	instance_create_depth(x,y,depth,o_coin)
+}
+
 

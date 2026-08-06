@@ -17,5 +17,11 @@ global.combo = 0
 
 global.temp_combo = 60 * 5
 global.maxtemp_combo = 60 * 5
+global.maxcombo = 0
+global.maxwavecombo = 0
 
 global.dash_combo = 1
+
+
+global.coin = 0
+
