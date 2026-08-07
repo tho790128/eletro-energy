@@ -34,9 +34,25 @@ if global.combo > 0
     global.temp_combo --
     if global.temp_combo <= 0
     {
+        
+        if global.combo > global.maxwavecombo
+        {
+            global.maxwavecombo = global.combo
+        }
+        if global.combo > global.maxcombo
+        {
+            global.maxcombo = global.combo
+        }
         global.combo = 0
         global.temp_combo = global.maxtemp_combo
         global.dash_combo = 1
     }
 }
 
+if !instance_exists(o_player)
+{
+    if keyboard_check_pressed(vk_enter)
+    {
+        room_goto(rm_menu)
+    }
+}

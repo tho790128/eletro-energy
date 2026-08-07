@@ -51,9 +51,17 @@ attack_estado = function()
         }
         
         var _dano = instance_place(x,y,o_entidades) 
-        if _dano
+        if _dano 
         {
-            _dano.perde_vida(1)
+            if _dano == o_player
+            {
+                _dano.perde_vida(1,2)
+            }
+            else
+            {
+                _dano.perde_vida(1,1)
+            }
+            
         }
     }
     else

@@ -7,6 +7,6 @@ if _mouse_cima
 {
     if _click
     {
-        show_message("habilidades!!!")
+        room_goto(rm_skill_tree)
     }
 }

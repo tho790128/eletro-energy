@@ -26,7 +26,15 @@ with(o_entidades)
     
     if _dist < other.dist_2 && _dist > other.dist_1 && id != other.dono && temp_dano <= 0
     {
-        perde_vida(other.dano)
+        if id = o_player
+        {
+            perde_vida(other.dano,2)
+        }
+        else
+        {
+            perde_vida(other.dano,1)
+        }
+        
         
     }
 }

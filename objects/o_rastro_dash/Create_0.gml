@@ -3,13 +3,7 @@ temp = 0.015
 dono = o_player
 
 explode = true
-
+dano = 1
+image_xscale = 2
+image_yscale = 2
 image_speed = 0
-if explode
-{
-    var _explosao = instance_create_depth(x,y,depth,o_explosao)
-
-    _explosao.temp = random_range(0.3,0.05)
-    _explosao.vel = 7
-    _explosao.dono = dono
-}

@@ -19,12 +19,20 @@ force = 10
 
 dire = 1
 
-perde_vida = function(dano=1)
+perde_vida = function(dano=1,perde=1)
 {
     if temp_dano <= 0
     {
-        vida -= dano
+        if perde == 1
+        {
+            vida -= dano
+        }
+        if perde = 2
+        {
+           global.vida -= dano 
+        }
         temp_dano = max_temp_dano
+        
     }
 }
 

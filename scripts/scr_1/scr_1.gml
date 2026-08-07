@@ -23,5 +23,30 @@ global.maxwavecombo = 0
 global.dash_combo = 1
 
 
-global.coin = 0
+global.coin = 20
 
+
+global.ctg_vida=
+{
+    vida1: 0,
+    vida2: 0,
+    vida3: 0,
+    regen: 0
+}
+
+global.ctg_dash=
+{
+    dash:0,
+    tempdash2: 0,
+    dano_dash2: 0,
+    vel_dash2: 0
+}
+
+global.ctg_coin=
+{
+    multicoin1:0,
+    multicoin2:0,
+    multicoin3:0,
+    multicoin4:0,
+    multicoin5:0
+}
