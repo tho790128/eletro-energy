@@ -115,3 +115,6 @@ dash_estado = function()
     }
 }
 estado = idle_estado
+
+xscale = 0
+yscale = 0

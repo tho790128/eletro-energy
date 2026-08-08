@@ -9,4 +9,4 @@ estado()
 
 temp_dash2 --
 
-global.vida = vida
+vida= global.vida

@@ -51,6 +51,7 @@ if global.combo > 0
 
 if !instance_exists(o_player)
 {
+    global.temp_combo = 1
     if keyboard_check_pressed(vk_enter)
     {
         room_goto(rm_menu)

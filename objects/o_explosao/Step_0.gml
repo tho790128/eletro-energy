@@ -20,23 +20,31 @@ if alpha <= 0
 dist_1 = scale - 2
 dist_2 = scale + 2
 
-with(o_entidades)
+with(o_enemy)
 {
     var _dist = point_distance(x,y,other.x,other.y)
     
     if _dist < other.dist_2 && _dist > other.dist_1 && id != other.dono && temp_dano <= 0
     {
-        if id = o_player
-        {
-            perde_vida(other.dano,2)
-        }
-        else
-        {
-            perde_vida(other.dano,1)
-        }
+        
+        
+        perde_vida(other.dano,1)
+        
         
         
     }
 }
-
+with(o_player)
+{
+    var _dist = point_distance(x,y,other.x,other.y)
+    
+    if _dist < other.dist_2 && _dist > other.dist_1 && id != other.dono && temp_dano <= 0
+    {
+        
+        perde_vida(other.dano,2)
+        
+        
+        
+    }
+}
 alpha -= temp

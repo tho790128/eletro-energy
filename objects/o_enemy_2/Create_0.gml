@@ -50,18 +50,17 @@ attack_estado = function()
             estado = exit_floor
         }
         
-        var _dano = instance_place(x,y,o_entidades) 
+        var _dano = instance_place(x,y,o_player) 
+        var _enemy = instance_place(x,y,o_enemy)
+        
         if _dano 
         {
-            if _dano == o_player
-            {
-                _dano.perde_vida(1,2)
-            }
-            else
-            {
-                _dano.perde_vida(1,1)
-            }
-            
+            _dano.perde_vida(1,2)
+        }
+        
+        if _enemy && instance_exists(_enemy)
+        {
+            _enemy.perde_vida(1)
         }
     }
     else

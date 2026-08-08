@@ -20,3 +20,5 @@ if keyboard_check_pressed(vk_escape)
 {
     room_goto(rm_menu)
 }
+
+show_debug_message(global.up_dash)
