@@ -23,7 +23,7 @@ global.maxwavecombo = 0
 global.dash_combo = 1
 
 
-global.coin = 2000
+global.coin = 0
 
 
 global.up_dash = 0
@@ -41,9 +41,7 @@ global.up_multi_coin1 = 0
 global.up_multi_coin2 = 0
 global.up_multi_coin3 = 0
 global.up_multi_coin4 = 0
-global.up_ = 0
-global.up_ = 0
-global.up_ = 0
+
 
 
 
