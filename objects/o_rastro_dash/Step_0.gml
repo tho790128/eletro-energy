@@ -8,7 +8,7 @@ if image_alpha <= 0
 if explode
 {
     var _enemy = instance_place(x,y,o_entidades)
-    if _enemy
+    if _enemy && _enemy != o_player
     {
         _enemy.perde_vida(dano,1)
     }

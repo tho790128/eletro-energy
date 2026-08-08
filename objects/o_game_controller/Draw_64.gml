@@ -39,7 +39,7 @@ if !instance_exists(o_player)
     draw_set_alpha(1)
     draw_set_colour(-1)
     draw_set_font(fn_pixel)
-    draw_text(20,80,"melhor combo da run: " + string(global.maxwavecombo))
-    draw_text(20,120,"melhor combo: " + string(global.maxcombo))
+    draw_text(40,90,"melhor combo da run: " + string(global.maxwavecombo))
+    draw_text(40,130,"melhor combo: " + string(global.maxcombo))
     
 }

@@ -5,12 +5,16 @@ velv = 0
 
 max_vel = 4
 
-vel_dash = 40
-temp_dash = 5
+vel_dash = global.p_vel_dash
+temp_dash = global.p_temp_dash
 
 temp_dash2 = 0
 
 dash = false
+
+temp_reg = global.p_temp_regen
+max_tem_reg = global.p_temp_regen
+
 
 up = false
 down = false
@@ -18,6 +22,8 @@ left = false
 right = false
 
 vida = 5
+
+global.vida = global.p_max_vida
 
 estado = noone
 idle_estado = function()
@@ -89,6 +95,7 @@ dash_estado = function()
         _rastro.image_index =  image_index
         _rastro.dono = id
         _rastro.image_alpha = image_alpha
+        _rastro.dano = global.p_dano
         
         temp_dash --
         
@@ -106,9 +113,9 @@ dash_estado = function()
             
             dash = false
             
-            temp_dash = 5
+            temp_dash = global.p_temp_dash
             
-            temp_dash2 = 60
+            temp_dash2 = global.p_recarg_dash
             
             estado = idle_estado
         }

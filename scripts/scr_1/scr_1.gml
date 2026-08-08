@@ -23,7 +23,7 @@ global.maxwavecombo = 0
 global.dash_combo = 1
 
 
-global.coin = 20
+global.coin = 2000
 
 
 global.up_dash = 0
@@ -35,7 +35,29 @@ global.up_vida1 = 0
 global.up_vida2 = 0
 global.up_vida3 = 0
 global.up_regen = 0
+global.up_temp_regen = 0
+global.up_ima_dinheiro1 = 0
+global.up_multi_coin1 = 0
+global.up_multi_coin2 = 0
+global.up_multi_coin3 = 0
+global.up_multi_coin4 = 0
+global.up_ = 0
+global.up_ = 0
+global.up_ = 0
 
-global.next_room = rm_game
+
+
+
+
+
+global.p_dano = 1
+global.p_temp_dash = 5
+global.p_vel_dash = 15
+global.p_recarg_dash = 60
+global.p_regen = false
+global.p_temp_regen = 60 * 5
+global.p_multi_coin = 1
+global.p_qtd_reg = 1
+global.p_max_vida = 5
 
 

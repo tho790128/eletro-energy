@@ -7,6 +7,7 @@ if _mouse_cima
 {
     if _click
     {
+        
         room_goto(rm_skill_tree)
     }
 }

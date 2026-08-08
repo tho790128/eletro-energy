@@ -5,7 +5,14 @@ right = keyboard_check(ord("D"))
 
 estado()
 
-
+if global.p_regen
+{
+    temp_reg--
+    if temp_reg <= 0
+    {
+        global.vida += global.p_qtd_reg
+    }
+}
 
 temp_dash2 --
 

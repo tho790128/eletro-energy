@@ -56,4 +56,5 @@ if !instance_exists(o_player)
     {
         room_goto(rm_menu)
     }
+    global.qtd_enemy = 0
 }

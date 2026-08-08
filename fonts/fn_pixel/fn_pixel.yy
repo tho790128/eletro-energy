@@ -1,7 +1,7 @@
 {
   "$GMFont":"",
   "%Name":"fn_pixel",
-  "AntiAlias":1,
+  "AntiAlias":0,
   "applyKerning":0,
   "ascender":14,
   "ascenderOffset":4,
@@ -85,7 +85,7 @@
     "120":{"character":120,"h":22,"offset":0,"shift":12,"w":10,"x":16,"y":26,},
     "121":{"character":121,"h":22,"offset":0,"shift":14,"w":12,"x":2,"y":26,},
     "122":{"character":122,"h":22,"offset":0,"shift":14,"w":12,"x":202,"y":50,},
-    "9647":{"character":9647,"h":22,"offset":3,"shift":16,"w":10,"x":190,"y":74,},
+    "9647":{"character":9647,"h":22,"offset":3,"shift":16,"w":9,"x":190,"y":74,},
   },
   "hinting":0,
   "includeTTF":false,

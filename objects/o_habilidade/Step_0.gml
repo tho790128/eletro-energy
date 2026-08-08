@@ -1,4 +1,6 @@
-if variable_global_get(variavel) =1 
+temp--
+
+if variable_global_get(variavel) =1  if temp <= 0
 {
     ativo = true
     comprado = true
